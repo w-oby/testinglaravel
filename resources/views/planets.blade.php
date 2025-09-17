@@ -12,6 +12,7 @@
     <h3>{{ $intro }}</h5>
 
     <ul>
+        <!-- Looping over planets array -->
         @foreach ($planets as $planet)
         <li><strong>{{ $planet['name'] }}</strong><br>{{ $planet['description'] }}</li>
         @endforeach
