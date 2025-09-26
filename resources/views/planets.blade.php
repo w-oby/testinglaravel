@@ -9,7 +9,7 @@
 
     <h2>Planets</h2>
 
-    <h3>{{ $intro }}</h5>
+    <h3>{{ $intro }}</h3>
 
     <ul>
         <!-- Looping over planets array -->

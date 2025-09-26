@@ -37,7 +37,21 @@ Route::get('/planets', function () {
         ],
     ];
 
-    return view('planets', ["intro" => $intro, "planets" => $planets]);
+    if (request()->has('planet')) {
+
+        $chosenPlanet = ucfirst(request('planet'));
+
+        $filteredPlanets = collect($planets)
+            ->where('name', $chosenPlanet)
+            ->toArray();
+
+    } else {
+
+        $filteredPlanets = $planets;
+
+    }
+
+    return view('planets', ["intro" => $intro, "planets" => $filteredPlanets]);
 
 });
 
