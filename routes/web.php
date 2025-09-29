@@ -124,8 +124,8 @@ Route::get('/colors', function () {
 
 });
 
-// PlanetController Route
+// PlanetController index Route
 Route::get('/planets', [PlanetController::class, 'index']);
 
-// PlanetController Route
+// PlanetController show Route
 Route::get('/planets/{planet}', [PlanetController::class, 'show']);

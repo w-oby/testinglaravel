@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use illuminate\Support\Collection;
+use Illuminate\Support\Collection;
 
 class PlanetController extends Controller
 {
